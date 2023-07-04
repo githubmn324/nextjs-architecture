@@ -1,16 +1,17 @@
 {
   "root": true,
- 
+
   "extends": [
     "next/core-web-vitals",
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:tailwindcss/recommended"
   ],
- 
+
   "plugins": ["@typescript-eslint", "simple-import-sort"],
- 
+
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json",
@@ -18,7 +19,7 @@
       "jsx": true
     }
   },
- 
+
   "rules": {
     "@typescript-eslint/no-unused-vars": [
       "error",
@@ -28,13 +29,13 @@
         "destructuredArrayIgnorePattern": "^_"
       }
     ],
- 
+
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
- 
+
     "react-hooks/exhaustive-deps": [
       "warn",
       {
