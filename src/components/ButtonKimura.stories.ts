@@ -6,11 +6,10 @@
 //   component: Button,
 // };
 
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Button } from './ButtonKimura';
-import { action } from "@storybook/addon-actions";
+import { action } from '@storybook/addon-actions';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof Button> = {
@@ -26,9 +25,9 @@ type Story = StoryObj<typeof Button>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    label:'Hello',
+    label: 'Hello',
     // primary: true,
     // label: 'Button',
-    onClick: action("aaaa")
+    onClick: action('aaaa'),
   },
 };

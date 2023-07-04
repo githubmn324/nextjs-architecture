@@ -1,13 +1,13 @@
 interface ButtonProps {
-    /**
+  /**
    * label kimura!!!
    */
-  label: string;
+  label: string
   /**
    * Optional click handler
    */
   // onClick: (val:string) => void;
-  onClick?: () => void;
+  onClick?: () => void
 }
 
 // export const Button = ({label,onClick}: ButtonProps) => {
@@ -23,15 +23,9 @@ interface ButtonProps {
 //   );
 // };
 
-export const Button = ({label,onClick}: ButtonProps) => {
-  return (
-    <button onClick={onClick} >
-      {label}
-    </button>
-  );
-};
-
-
+export const Button = ({ label, onClick }: ButtonProps) => {
+  return <button onClick={onClick}>{label}</button>
+}
 
 // function Button({ children ,onClick}) {
 //   return <button type="button" onClick={onClick}>
