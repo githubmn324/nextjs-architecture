@@ -1,10 +1,4 @@
-// import Button from './ButtonKimura';
-// import  { StoryObj } from '@storybook/react';
-
-// export default {
-//   title: 'Example/ButtonKimura',
-//   component: Button,
-// };
+'use client';
 
 import { action } from '@storybook/addon-actions';
 import type { Meta, StoryObj } from '@storybook/react';

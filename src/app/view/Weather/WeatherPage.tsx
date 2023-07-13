@@ -4,6 +4,7 @@ import Loading from 'app/loading';
 import { type WeatherModel } from 'app/types/WeatherModel';
 import SearchBar from 'app/view/Weather/SearchBar';
 import WeatherDetails from 'app/view/Weather/WeatherDetails';
+import { type NextComponentType } from 'next';
 
 import { useWeather } from './useWeather';
 
@@ -32,7 +33,7 @@ export const WeatherView = ({ city, weather, loading, onChangeCity, onSearchWeat
 };
 
 // ロジックを受け取りPropsを渡す役目Containerコンポーネント
-const WeatherPage: any = () => {
+const WeatherPage: NextComponentType = () => {
   const { city, weather, loading, onChangeCity, onSearchWeather } = useWeather();
 
   return (

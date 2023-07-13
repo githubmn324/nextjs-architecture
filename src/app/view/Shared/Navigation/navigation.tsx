@@ -14,13 +14,13 @@ const Navigation = () => {
         <div className="absolute right-5">
           {user.id ? (
             <div className="flex space-x-4">
-              <Link href="/auth/firestore">Firestore</Link>
-              <Link href="/auth/profile">プロフィール</Link>
+              {/* <Link href="/auth/firestore">Firestore</Link> */}
+              {/* <Link href="/view/Authorization/Profile">プロフィール</Link> */}
             </div>
           ) : (
             <div className="flex space-x-4">
-              <Link href="/auth/login">ログイン</Link>
-              <Link href="/auth/signup">サインアップ</Link>
+              {/* <Link href="/auth/login">ログイン</Link>
+              <Link href="/auth/signup">サインアップ</Link> */}
             </div>
           )}
         </div>

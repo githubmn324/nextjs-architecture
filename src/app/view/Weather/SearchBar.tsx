@@ -1,3 +1,5 @@
+'use client';
+
 import { BsSearch } from 'react-icons/bs';
 
 interface Props {

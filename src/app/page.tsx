@@ -1,5 +1,3 @@
-'use client';
-
 import WeatherPage from 'app/view/Weather/WeatherPage';
 
 export default function Home() {
